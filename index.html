@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For Purvi 💖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            color: white;
+            background: linear-gradient(-45deg, #ff758c, #ff7eb3, #fad0c4, #fbc2eb);
+            background-size: 400% 400%;
+            animation: bgMove 10s ease infinite;
+        }
+
+        @keyframes bgMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            margin-top: 90px;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 22px;
+            margin: 12px;
+        }
+
+        button {
+            padding: 14px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        #yes {
+            background: #4CAF50;
+            color: white;
+        }
+
+        #no {
+            background: #ff4d4d;
+            color: white;
+            position: absolute;
+        }
+
+        /* 🌸 Hovering PNG effect */
+        .hover-logo {
+            position: absolute;
+            width: 110px;
+            animation: floatLogo 4s ease-in-out infinite;
+        }
+
+        @keyframes floatLogo {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(2deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🐱 PNG IMAGES (THESE LINKS ARE PERFECT ✅) -->
+    <img src="https://i.ibb.co/BHHGrx9m/cat1-png.png" class="hover-logo" style="top:30px; left:20px;">
+    <img src="https://i.ibb.co/WvQm45c5/cat2-png.png" class="hover-logo" style="top:30px; right:20px;">
+    <img src="https://i.ibb.co/VpBM43W6/cat3-png.png" class="hover-logo" style="bottom:70px; left:20px;">
+    <img src="https://i.ibb.co/MDQJmWYY/cat4-png.png" class="hover-logo" style="bottom:70px; right:20px;">
+    <img src="https://i.ibb.co/n81F6PhV/0-removebg-preview.png" class="hover-logo" style="top:55%; left:10%; transform: translate(-50%, -25%);">
+    <img src="https://i.ibb.co/JjcQCzg3/hh-removebg-preview.png" class="hover-logo" style="top:55%; right:10%; transform: translate(-25%, -50%);">
+    <img src="https://i.ibb.co/CsWgp1RB/j-removebg-preview.png" class="hover-logo" style="top:25%; left:10%; transform: translate(-50%, -25%);">
+    <img src="https://i.ibb.co/SDwgxH8s/i-removebg-preview.png" class="hover-logo" style="top:25%; right:10%; transform: translate(-25%, -50%);">
+
+    <h1>Hey Purvi 💫</h1>
+    <p>I wanted to tellyou something special…</p>
+    <p>Since you left the school I missed you alot😔</p>
+    <p>Every day I just wanted to tell you what was actually in my heart</p>
+    <p>I still remember the feeling which came in my mind and heart when I came to know that you left the school and I didn't tell you my feelings</p>
+    <p>I remember each and every moment I spent with you in school talking and laughing with you</p>
+    <p>I tried many times to contact you but... And then one day I found your snapchat</p>
+    <p>Now finally I have decided that I want to tell you what is in my heart</p>
+    <p>You Are My Crush AND I LOVE YOU PURVI SHUKLA💗</p>
+    <p><b>Will you be my special person? 💖</b></p>
+
+    <button id="yes" onclick="alert('Purvi, you just made my day 😍💖')">
+        Yes
+    </button>
+
+    <button id="no">No</button>
+
+    <script>
+        const noBtn = document.getElementById("no");
+
+        function moveButton() {
+            const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+            const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+            noBtn.style.left = x + "px";
+            noBtn.style.top = y + "px";
+        }
+
+        // PC
+        noBtn.addEventListener("mouseover", moveButton);
+
+        // Mobile
+        noBtn.addEventListener("touchstart", function(e) {
+            e.preventDefault();
+            moveButton();
+        });
+    </script>
+
+</body>
+</html>
